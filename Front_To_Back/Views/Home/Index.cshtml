@@ -1,6 +1,6 @@
 ﻿@model Front_To_Back.Models.HomeViewModel
 @{
-    var product = Model.Products;
+    var products = Model.Products;
 
 }
 <!-- Featured Start -->
@@ -36,7 +36,7 @@
 <!-- Categories Start -->
 <div class="container-fluid pt-5">
     <div class="row px-xl-5 pb-3">
-        @foreach (var item in product)
+        @foreach (var item in products)
         {
              <div class="col-lg-4 col-md-6 pb-1">
             <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
@@ -85,7 +85,7 @@
         <h2 class="section-title px-5"><span class="px-2">Trandy Products</span></h2>
     </div>
     <div class="row px-xl-5 pb-3">
-        @foreach (var item in product)
+        @foreach (var item in products)
         {
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                 <div class="card product-item border-0 mb-4">
@@ -136,7 +136,7 @@
         <h2 class="section-title px-5"><span class="px-2">Just Arrived</span></h2>
     </div>
     <div class="row px-xl-5 pb-3">
-        @foreach (var item in product)
+        @foreach (var item in products)
         {
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                 <div class="card product-item border-0 mb-4">

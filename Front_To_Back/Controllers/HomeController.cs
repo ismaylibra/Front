@@ -6,8 +6,8 @@ namespace Front_To_Back.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly AppDbContext? _dbcontext;
-        public HomeController(AppDbContext? dbcontext)
+        private readonly AppDbContext _dbcontext;
+        public HomeController(AppDbContext dbcontext)
         {
             _dbcontext = dbcontext;
         }
@@ -15,8 +15,8 @@ namespace Front_To_Back.Controllers
         public IActionResult Index()
 
         {
-            var products = _dbcontext?.Products.ToList();
-            var categories = _dbcontext?.Categories.ToList();
+            var products = _dbcontext.Products.ToList();
+            var categories = _dbcontext.Categories.ToList();
             //var category = new List<Category>
             //{
             //    new Category()
