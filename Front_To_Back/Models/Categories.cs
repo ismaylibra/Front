@@ -5,7 +5,6 @@
         public int Id { get; set; }
         public string? Name { get; set; }
         public Product? Products { get; set; }
-        public int ProductID { get; set; }
         public override string ToString()
         
         {
